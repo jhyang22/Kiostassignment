@@ -19,8 +19,10 @@ public class Main {
             System.out.println(" ");
             System.out.println("-----------------------------------------------MENU-----------------------------------------------");
 
+            int i = 1;
             for (MenuItem a : menuItemList) {
-                System.out.println("1. " + a.getName() + "      |    W " + a.getPrice() + "   |   " + a.getExplanation());
+                System.out.println(i + ". " + a.getName() + "      |    W " + a.getPrice() + "   |   " + a.getExplanation());
+                i++;
             }
 
             System.out.println("0. 종료");
